@@ -6,6 +6,7 @@
 package br.com.alphasilv4;
 
 import br.com.alphasilv4.erro.DataAccessLayerException;
+import br.com.alphasilv4.utils.Constants;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +27,6 @@ import javax.transaction.Transactional;
 @Transactional
 public abstract class AbstractDao implements Serializable {
 
-    private static final String PU = "api_PU";
     private static EntityManagerFactory entityManagerFactory = build();
     private static EntityManager entityManager;
 
@@ -215,7 +215,7 @@ public abstract class AbstractDao implements Serializable {
     }
 
     protected static EntityManagerFactory build() {
-        entityManagerFactory = Persistence.createEntityManagerFactory(PU);
+        entityManagerFactory = Persistence.createEntityManagerFactory(Constants.PU);
         return entityManagerFactory;
     }
 

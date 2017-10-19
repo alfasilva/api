@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class Constants implements Serializable {
 
-    public static final String PU = "garimpeiro_PU";    
+    public static final String PU = "api_PU";    
     public static final String CAD_INF_COMP = "Informações complementares do Empreendedor.";
     public static final String CAD_SUCESSO = "Informações cadastradas com Sucesso!";
     public static final String CAD_ERRO = "Não foi possível cadastrar informações.";
